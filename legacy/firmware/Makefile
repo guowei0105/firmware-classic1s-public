@@ -142,6 +142,7 @@ OBJS += sui.o
 OBJS += kaspa.o
 OBJS += nexa.o
 OBJS += nervos.o
+OBJS += common_tx.o
 OBJS += alephium.o
 OBJS += alephium/alph_address.o
 OBJS += alephium/alph_decode.o
@@ -157,6 +158,7 @@ OBJS += ton_cell.o
 OBJS += ton_tokens.o
 OBJS += ton_address.o
 OBJS += ton_layout.o
+OBJS += benfen.o
 OBJS += psbt/psbt.o
 OBJS += bip322_simple/bip322_simple.o
 endif
@@ -266,6 +268,7 @@ OBJS += protob/messages-scdo.pb.o
 OBJS += protob/messages-lnurl.pb.o
 OBJS += protob/messages-alephium.pb.o
 OBJS += protob/messages-ton.pb.o
+OBJS += protob/messages-benfen.pb.o
 endif
 
 OPTFLAGS ?= -Os

@@ -15,14 +15,18 @@
 #include "alephium/alph_layout.h"
 #include "base58.h"
 #include "blake2b.h"
+#include "common_tx.h"
 #include "debug.h"
 #include "fsm.h"
 #include "layout2.h"
+#include "memzero.h"
 #include "messages-alephium.pb.h"
 #include "messages.h"
 #include "protect.h"
 #include "util.h"
 
+// #define MAX_ALEPHIUM_DATA_SIZE 20480
+// extern uint8_t common_tx_data_buffer[MAX_ALEPHIUM_DATA_SIZE];
 bool alephium_get_address(const AlephiumGetAddress *msg, AlephiumAddress *resp);
 void alephium_sign_tx(const HDNode *node, const AlephiumSignTx *msg);
 void alephium_signing_txack(const AlephiumTxAck *tx);

@@ -397,6 +397,14 @@ if TYPE_CHECKING:
         AlephiumBytecodeAck = 12108
         AlephiumSignMessage = 12109
         AlephiumMessageSignature = 12110
+        BenfenGetAddress = 12201
+        BenfenAddress = 12202
+        BenfenSignTx = 12203
+        BenfenSignedTx = 12204
+        BenfenSignMessage = 12205
+        BenfenMessageSignature = 12206
+        BenfenTxRequest = 12207
+        BenfenTxAck = 12208
         DeviceEraseSector = 10026
 
     class FailureType(IntEnum):
@@ -525,6 +533,15 @@ if TYPE_CHECKING:
         STAKE_DEREGISTRATION = 1
         STAKE_DELEGATION = 2
         STAKE_POOL_REGISTRATION = 3
+        STAKE_REGISTRATION_CONWAY = 7
+        STAKE_DEREGISTRATION_CONWAY = 8
+        VOTE_DELEGATION = 9
+
+    class CardanoDRepType(IntEnum):
+        KEY_HASH = 0
+        SCRIPT_HASH = 1
+        ABSTAIN = 2
+        NO_CONFIDENCE = 3
 
     class CardanoPoolRelayType(IntEnum):
         SINGLE_HOST_IP = 0
@@ -533,9 +550,9 @@ if TYPE_CHECKING:
 
     class CardanoTxAuxiliaryDataSupplementType(IntEnum):
         NONE = 0
-        GOVERNANCE_REGISTRATION_SIGNATURE = 1
+        CVOTE_REGISTRATION_SIGNATURE = 1
 
-    class CardanoGovernanceRegistrationFormat(IntEnum):
+    class CardanoCVoteRegistrationFormat(IntEnum):
         CIP15 = 0
         CIP36 = 1
 

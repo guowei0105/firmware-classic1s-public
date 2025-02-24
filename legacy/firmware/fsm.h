@@ -24,6 +24,7 @@
 #include "messages-alephium.pb.h"
 #include "messages-algorand.pb.h"
 #include "messages-aptos.pb.h"
+#include "messages-benfen.pb.h"
 #include "messages-bitcoin.pb.h"
 #include "messages-cardano.pb.h"
 #include "messages-conflux.pb.h"
@@ -338,4 +339,11 @@ void fsm_msgLnurlAuth(const LnurlAuth *msg);
 void fsm_msgTonGetAddress(const TonGetAddress *msg);
 void fsm_msgTonSignMessage(const TonSignMessage *msg);
 void fsm_msgTonSignProof(const TonSignProof *msg);
+
+// benfen
+void fsm_msgBenfenGetAddress(const BenfenGetAddress *msg);
+void fsm_msgBenfenSignTx(const BenfenSignTx *msg);
+void fsm_msgBenfenSignMessage(BenfenSignMessage *msg);
+void fsm_msgBenfenTxAck(BenfenTxAck *msg);
+
 #endif

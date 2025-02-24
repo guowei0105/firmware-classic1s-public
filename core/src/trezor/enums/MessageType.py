@@ -376,3 +376,11 @@ if not utils.BITCOIN_ONLY:
     AlephiumBytecodeAck = 12108
     AlephiumSignMessage = 12109
     AlephiumMessageSignature = 12110
+    BenfenGetAddress = 12201
+    BenfenAddress = 12202
+    BenfenSignTx = 12203
+    BenfenSignedTx = 12204
+    BenfenSignMessage = 12205
+    BenfenMessageSignature = 12206
+    BenfenTxRequest = 12207
+    BenfenTxAck = 12208
